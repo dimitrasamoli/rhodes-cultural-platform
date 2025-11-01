@@ -6,29 +6,29 @@ Built with **React**, **Tailwind CSS**, **Leaflet (OpenStreetMap)**, and a **Pyt
 ## 🧭 Quick Start
 
 ### 1️⃣ Clone the Repository
-```bash
+
 git clone https://github.com/your-username/rhodes-cultural-platform.git
 cd rhodes-cultural-platform
 
 ### 2️⃣ Install Dependencies
 npm install
-# or:
+or:
 yarn
 
 ### 3️⃣ Run Development Server
 npm start
-# opens http://localhost:3000
+opens http://localhost:3000
 
 ### 4️⃣ Build for Production
 npm run build
-# creates an optimized build in /build
+creates an optimized build in /build
 
 
-📊 Data Pipeline (Events)
+## 📊 Data Pipeline (Events)
 Cultural event data is submitted through a Google Form, exported as a CSV file, and converted to JSON with Python.
 Google Form → CSV → csv_to_json.py → public/data/events.json
 
-🔁 To Regenerate the JSON
+## 🔁 To Regenerate the JSON
 Replace the old CSV file (e.g. sheet.csv) with the new export.
 Run the script:
 python scripts/csv_to_json.py
