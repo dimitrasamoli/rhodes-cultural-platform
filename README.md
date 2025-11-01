@@ -6,7 +6,7 @@ Built with **React**, **Tailwind CSS**, **Leaflet (OpenStreetMap)**, and a **Pyt
 ## 🧭 Quick Start
 
 ### 1️⃣ Clone the Repository
-
+```bash
 git clone https://github.com/your-username/rhodes-cultural-platform.git
 cd rhodes-cultural-platform
 
