@@ -1,0 +1,88 @@
+{
+    "nav": {
+        "home" : "Home",
+        "about" : "About Rhodes",
+        "activities" : "Activities",
+        "map" : "Map",
+        "plan" : "Plan your trip",
+        "experiences" : "Experiences"
+    },
+
+    "home" : {
+        "title" : " Welcome to Rhodes Cultural Tourism",
+        "quote" : " Here, every corner has a story and every experience has a soul. "
+    },
+
+    "slider" : {
+        "palace": "Palace of the Grand Master",
+        "tsambika": "Tsambika Beach",
+        "butterfly": "Butterfly Valley",
+        "windsurf": "Windsurfing in Rhodes",
+        "village": "Alleys of the Old Town",
+        "food": "Local Flavors",
+        "festival": "Local Festival"
+    },
+
+    "about_rhodes" : {
+        "title" : " About Rhodes",
+        "paragraph1" : " Rhodes, the Island of the Sun, has been a crossroads of civilizations for millennia. From Antiquity and the founding of the city-state of Rhodes in 408 BC to the Roman and Byzantine periods, the island has always played a key role in the Eastern Mediterranean. ",
+        "paragraph2" : " Its Medieval Town, with well-preserved walls and the Palace of the Grand Master, is a UNESCO World Heritage Site and a living treasure of the Knights of St. John. ",
+        "paragraph3" : " The island is characterized by a variaty of landscape: mountain villages, forests, gorges, and extended coastlines. The Valley of the Butterflies, the forest of Prophet Elias, and beaches such as Tsambika or Prasonisi attact vititors for many reasons, from hiking and relaxation to water sports. ",
+        "paragraph4" : " Rhodes maintains a strong cultural identity, expressed both through daily life and organized events. Festivals, local cultural groups, and traditional dances bring life to every part of the island. Its gastronomy is based on products like olive oil, honey, and wine, and includes traditional dishes such as pitaroudia and melekounia. ",
+        "quick_facts_title" : " Quick Facts ",
+        "quick_facts" : [
+            " Population : approx. 115,000 residents ",
+            " Area : around 1,400 sq. km ",
+            " Climate : Mediterranean - mild winters, hot summers ",
+            " Administrative region : South Aegean "
+        ],
+        "fun_facts_title" : " Fun Facts ",
+        "fun_facts" : [
+            " Rhodes is the 4th largest island in Greece ",
+            " It enjoys over 300 days of sunshine per year ",
+            " It was home to one of the Seven Worders of the Ancient World, the Colossus of Rhodes"
+        ]
+    } ,
+
+    "activities" : {
+        "title" : " Activities ",
+        "upcoming_events" : " Upcoming Events "
+    },
+
+    "map" : {
+        "title" : " Event Map ",
+        "view_in_maps" : " View in Google Maps "
+    },
+
+    "plan" : {
+        "title" : " Plan Your Trip ",
+        "sign_in" : " Sign Up ",
+        "sign_out" : " Remove ",
+        "your_plan" : " Your Trip Plan ",
+        "event" : " Event ",
+        "location" : " Location ",
+        "time" : " Date ",
+        "actions" : " Actions "
+    },
+
+    "experiences" :  {
+        "title" : " Visitors Experiences ",
+        "reviews" : [
+            {
+                "title" : "Chloe",
+                "review" : "Joining the cooking at farmhouse was amazing! We learned to make traditional pitaroudia and shared a meal together in the garden.",
+                "date" : "20/07/2025",
+                "location" : "Archangelos",
+                "image" : ""
+            },
+            {
+                "title" : "George",
+                "review" : "Amazing horseback ride through the forest!",
+                "date" : "03/08/2025",
+                "location" : "Theologos",
+                "image" : ""
+            }
+        ]
+
+    }
+}
