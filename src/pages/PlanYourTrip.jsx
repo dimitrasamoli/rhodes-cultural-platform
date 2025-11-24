@@ -3,17 +3,9 @@ import { useTranslation } from "react-i18next";
 import eventsData from "../data/events.json";
 
 const PlanYourTripPage = () => {
-  // const [events, setEvents] = useState([]);
   const [selectedEvents, setSelectedEvents] = useState([]);
   const { t, i18n } = useTranslation();
   const  isEn = i18n.language?.startsWith("en");
-
-  /* useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/data/events.json`)
-        .then(response => response.json())
-        .then(data => setEvents(data))
-        .catch(error => console.error(error));
-  }, []); */
 
   const events = eventsData;
   
