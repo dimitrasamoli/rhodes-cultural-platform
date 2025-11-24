@@ -7,13 +7,6 @@ const Activities = () => {
     const { t, i18n } = useTranslation(); 
     const isEn = i18n.language?.startsWith("en");
 
-   /* useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/data/events.json`)
-      .then(response => response.json())
-      .then(data => setEvents(data))
-      .catch(error => console.error(error));
-}, []); */
-
   const events = eventsData;
 
   return (                                                                                             
