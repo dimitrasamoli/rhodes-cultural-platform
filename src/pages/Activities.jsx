@@ -3,7 +3,6 @@ import { useTranslation  } from "react-i18next";
 import eventsData from "../data/events.json";
 
 const Activities = () => {
-    //const [events, setEvents] = useState([]);
     const { t, i18n } = useTranslation(); 
     const isEn = i18n.language?.startsWith("en");
 
