@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# 🌍Rhodes Cultural Platform 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A multilingual (Greek / English) web platform showcaseing cultural activities in Rhodes.
+Built with **React**, **Tailwind CSS**, **Leaflet (OpenStreetMap)**, and a **Python data pipeline** that automatically converts Google Form submissions into structured JSON data.
 
-## Available Scripts
+## Quick Start 
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/dimitrasamoli/rhodes-cultural-platform.git
+cd rhodes-cultural-platform
+```
 
-In the project directory, you can run:
+### 2️⃣ Install Dependencies 
+```bash
+npm install
+```
 
-### `npm start`
+### 3️⃣ Run Development Server 
+```bash
+npm start
+```
+Opens the app at :
+👉🏻 http://localhost:3000
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 4️⃣ Build for Production 
+```bash
+npm start
+```
+Creates an optimized static build in: 
+```bash
+/build
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Data Pipeline
+The platform includes an automated pipline for updating cultural events. 
+```bash
+Google Form -> CSV (sheet.csv) -> csv_to_json.py -> src/data/events.json -> React pages
+```
 
-### `npm test`
+### Data Processing 
+1. Cultural organizers submit event data through a **Google Form**
+2. Google Sheet exports respones as a **CSV file** (sheet.csv)
+3. The Python script csv_to_json.py:
+   - loads the CSV using **Pandas**
+   - cleans & tranforms the data
+   - generates a structured JSON file:
+   ```bash
+   src/data/events.json
+   ```
+4. React imports this JSON directly
+   ```bash
+   import eventsData from "../data/events.json";
+5. All event-related pages update automatically during the build
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+###
+  - The platform works even when opened via file://
+  - No backend or server is required
+  - All data is bundled dorectly into the final static build 
